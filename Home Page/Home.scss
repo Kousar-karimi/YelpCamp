@@ -1,0 +1,162 @@
+@import "../baysic";
+
+header{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    .right{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -35px;
+        padding-right: 20px;
+
+    }
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .login{
+        position: relative;
+        top: 10px;
+        margin-right: 17px;
+    }
+    .home{
+        position: relative;
+        top: 13px;
+        margin-left: 20px;
+    }
+    a{
+        color: $color-primary;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    button{
+        font-size: 1.02rem;
+        height: 40px;
+        margin-left: 20px;
+    }
+    .phone{
+        display:none ;    
+    }
+    .dropdown {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -30px;
+        margin-right: 20px;
+      }
+      .meno{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.9;
+        height: auto;
+        border-radius: 3px;
+        top: 18px;
+        a{
+            background-color: rgb(187, 0, 0);
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 4px;
+            color: wheat;
+        }
+      }
+      .dropdown:hover .meno {
+        display: block;
+      }
+    @media screen and (max-width:499px) {
+        .desctop{
+            display: none;
+        }
+        .phone{
+            display: inline;
+        }
+    }
+}
+
+main{
+    .serch{
+        background-color: rgb(255, 255, 224);
+        font-weight: 400;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 40px;
+        padding: 15px;
+        border-radius: 14px;
+        padding-left: 30px;
+        p{
+            font-size: 18px;
+            width: 40vmax;
+        }
+        input{
+            height: 30px;
+            border-radius: 6px;
+            padding-left: 10px
+        }
+        button{
+            width: 70px;
+            height: 30px;
+        }
+        a{
+            display: block;
+            position: relative;
+            top: 15px;
+            margin-bottom: 10px;
+        }
+    }
+    .locaitionAll{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .locaitions{
+            width: 360px;
+            border: 1px solid rgb(182, 182, 182);
+            margin: 8px;
+            img{
+                width: 90%;
+                position: relative;
+                top: 15px;
+                left: 5%;
+            }
+            .card-body{
+                padding-left: 20px;
+                p{
+                    margin-top: -11px;
+                    font-size: 16px;
+                    color: $color-primary;
+                }
+                .card-btn{
+                    width: 300px;
+                    height: 40px;
+                    background-color: white;
+                    color: black;
+                    font-weight: 700;
+                    margin: auto;
+                    margin-bottom: 10px;
+                    border: 1px solid $color-primary;
+                    font-size: 16px;
+                }
+            }
+            @media only screen and (max-width: 405px) {
+                .card-btn{
+                    width: 250px;
+                }
+                img{
+                    width: 280px;
+                }
+                .serch{
+                    width: 100%;
+                }
+              }
+
+        }
+    }
+    .end{
+        margin-top: 30px;
+    }
+}

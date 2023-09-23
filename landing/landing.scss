@@ -1,0 +1,42 @@
+@import "../baysic";
+
+.body{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .img{
+        display: inline;
+        width: 560px;
+        height: 600px;
+    }
+    .text{
+        display: inline;
+        width: 400px;
+    }
+    p{
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 35px;
+    }
+    .checkimg{
+        position: relative;
+        top: 7px;
+        padding-right: 10px;
+    }
+    button{
+        width: 200px;
+        height: 40px;
+        font-size: 15px;
+        font-weight: 300;
+    }
+    @media screen and (max-width:982px) {
+        .text{
+            order: 2;
+        }
+        .img{
+            margin-bottom: 30px;
+            order: 1;
+        }
+    }
+}

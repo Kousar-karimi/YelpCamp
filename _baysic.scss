@@ -20,3 +20,16 @@ a{
 
 $color-primary: gray;
 $font-difalt:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+.publicheader{
+    .icone{
+        display: none;
+    }
+    .linkhome{
+        position: relative;
+        top: -30px;
+        color: $color-primary;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

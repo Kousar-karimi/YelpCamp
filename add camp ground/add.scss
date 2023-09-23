@@ -1,0 +1,126 @@
+@import "../baysic";
+
+header{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    margin-bottom: 20px;
+    .right{
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -35px;
+        padding-right: 20px;
+
+    }
+    .left{
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+    .login{
+        position: relative;
+        top: 10px;
+        margin-right: 17px;
+    }
+    .home{
+        position: relative;
+        top: 13px;
+        margin-left: 20px;
+    }
+    a{
+        color: $color-primary;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .out{
+        position: relative;
+        top: 10px;
+    }
+    .phone{
+        display:none ;    
+    }
+    .dropdown {
+        position: relative;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        top: -30px;
+        margin-right: 20px;
+      }
+      .meno{
+        display: none;
+        position: absolute;
+        z-index: 1;
+        opacity: 0.9;
+        height: auto;
+        border-radius: 3px;
+        top: 18px;
+        a{
+            background-color: rgb(187, 0, 0);
+            display: block;
+            text-align: center;
+            padding: 10px;
+            margin: 4px;
+            color: wheat;
+        }
+      }
+      .dropdown:hover .meno {
+        display: block;
+      }
+    @media screen and (max-width:499px) {
+        .desctop{
+            display: none;
+        }
+        .phone{
+            display: inline;
+        }
+    }
+}
+
+main{
+    width: 100%;
+    height: auto;
+    display: inline;
+    form{
+        height: 400px;
+        width: 80%;
+        margin: auto;
+        background-color: rgb(255, 255, 224);
+        h3{
+            display: block;
+            text-align: center;
+            font-size: 40px;
+        }
+        label{
+            font-size: 18px;
+            font-weight: 800;
+            display: block;
+            margin-top: 30px ;
+            margin-bottom: 9px;
+            margin-left: 10%;
+        }
+        input{
+            display: block;
+            width: 80%;
+            margin: auto;
+            height: 140px;
+            color: $color-primary;
+            font-weight: 400;
+            border: 1px solid rgb(195, 195, 195);
+        }
+        .button{
+            display: block;
+            width: 60%;
+            height: 40px;
+            margin: auto;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+
+    }
+    .logo{
+        margin-top: 20px;
+        display: block;
+    }
+}

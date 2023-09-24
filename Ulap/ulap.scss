@@ -1,0 +1,99 @@
+@import "../baysic";
+
+.img-all{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+    .locaitions{
+        width: 550px;
+        .prise{
+            display: flex;
+            position: relative;
+            top: -40px;
+            padding-right: 23px;
+            justify-content: flex-end;
+        }
+        .text{
+            position: relative;
+            top: -25px;
+        }
+    }
+}
+
+table{
+    margin-bottom: 20px;
+    border-collapse: collapse;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+    td{
+        padding: 20px;
+        border: 1px solid rgb(212, 212, 212);
+        p{
+            color: $color-primary;
+        }
+    }
+}
+
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.form{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+}
+
+form{
+    width: 30%;
+    display: none;
+    margin: 10px;
+    border: 1px solid rgb(212, 212, 212);
+    padding: 10px;
+    label{
+        display: block;
+        font-size: 17px;
+        font-weight: 300;
+    }
+    input{
+        width: 230px;
+        height: 20px;
+        margin: 10px;
+        display: block;
+    }
+    .comment{
+        height: 50px;
+        width: 260px;
+    }
+}
+
+@media screen and (max-width:874px) {
+    .map{
+        display: none;
+    }
+    table{
+        margin-right: 0px;
+    }
+    .btn{
+        margin-right: 0px;
+    }
+    .form{
+        margin-right: 0px;
+    }
+    form{
+        width: 60%;
+    }
+    .locaitions{
+        width: 80%;
+        margin: 0px;
+        padding: 0px;
+    }
+}
